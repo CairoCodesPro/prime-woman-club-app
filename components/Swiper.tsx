@@ -1,29 +1,41 @@
-import React, { Component } from "react"
-import Slider from 'react-slick'
-import Image from 'next/image'
+import React, { Component } from "react";
+import Slider from "react-slick";
+import Image from "next/image";
 
-export default class CarouselDr extends Component {
+export default class HomeBanners extends Component {
   render() {
     const settings = {
-      className: "center",
-      infinite: true,
-      speed: 500,
+
+      centerMode: true,
+      centerPadding: "160px",
       slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: false
+      speed: 500,
+      arrows: false,
+      dots: true,
     };
     return (
-      <div>
+      <>
         <Slider {...settings}>
-          <div className="px-2">
-            <Image src="/Dr1.jpeg" alt="Vercel Logo" width={450} height={640} />
+          <div>
+            <Image src="/banner1.png" alt="Vercel Logo" width={100} height={640} layout="responsive" />
           </div>
-          <div className="px-2">
-            <Image src="/Dr2.jpeg" alt="Vercel Logo" width={450} height={640} />
+          <div>
+            <Image src="/banner2.png" alt="Vercel Logo" width={100} height={640} layout="responsive" />
+          </div>
+          <div>
+            <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+          </div>
+          <div>
+            <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+          </div>
+          <div>
+            <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+          </div>
+          <div>
+            <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
           </div>
         </Slider>
-      </div>
+      </>
     );
   }
 }
