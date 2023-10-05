@@ -12,29 +12,41 @@ export default class HomeBanners extends Component {
       speed: 500,
       arrows: false,
       dots: true,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
     return (
       <>
-        <Slider {...settings}>
-          <div>
-            <Image src="/banner1.png" alt="Vercel Logo" width={100} height={640} layout="responsive" />
-          </div>
-          <div>
-            <Image src="/banner2.png" alt="Vercel Logo" width={100} height={640} layout="responsive" />
-          </div>
-          <div>
-            <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
-          </div>
-          <div>
-            <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
-          </div>
-          <div>
-            <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
-          </div>
-          <div>
-            <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
-          </div>
-        </Slider>
+        <div className="lg:mx-52">
+          <Slider {...settings}>
+            <div>
+              <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+            <div>
+              <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+            <div>
+              <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+            <div>
+              <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+            <div>
+              <Image src="/banner1.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+            <div>
+              <Image src="/banner2.png" alt="Vercel Logo" width={1920} height={640} layout="responsive" />
+            </div>
+          </Slider>
+        </div>
       </>
     );
   }
