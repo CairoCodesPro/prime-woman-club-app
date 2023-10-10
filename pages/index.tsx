@@ -1,5 +1,7 @@
 import Head from 'next/head';
+
 import SwiperSlider from '@/components/Swiper';
+import Products from '@/components/Products';
 
 
 export default function Home() {
@@ -9,6 +11,7 @@ export default function Home() {
         <title>Início</title>
       </Head>
       <SwiperSlider />
+      <Products />
     </>
   )
 }

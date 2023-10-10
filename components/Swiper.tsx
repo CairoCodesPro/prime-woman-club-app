@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import Sub from '@/components/Sub';
 
 export default class HomeBanners extends Component {
   render() {
@@ -47,6 +48,7 @@ export default class HomeBanners extends Component {
             </div>
           </Slider>
         </div>
+        <Sub />
       </>
     );
   }
