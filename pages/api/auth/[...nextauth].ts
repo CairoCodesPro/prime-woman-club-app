@@ -1,6 +1,9 @@
+import { query as q } from 'faunadb'
+
 import NextAuth from "next-auth"
 import GoogleProvider from "next-auth/providers/google"
 
+import { fauna } from '../../../services/fauna'
 export const authOptions = {
   // Configure one or more authentication providers
   providers: [
@@ -17,6 +20,20 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  callbacks: {
+    async signIn(user, account, profile) {
+      const { email } = user.user.email
+ console.log("Email:", user.user.email); 
+      await fauna.query(
+        q.Create(
+          q.Collection('users'),
+          { data: { email } }
+        )
+      )
+      return true
+    },
+
+  },
 }
 
 export default NextAuth(authOptions)
