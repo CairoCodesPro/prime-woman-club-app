@@ -3,11 +3,10 @@ import Sign from '@/components/Sign';
 export default function NavBar() {
   return (
     <>
-      <div className="w-full flex items-center justify-between border-b shadow-sm py-8 px-10 mb-6">
-        <div>
-          <a className="text-2xl font-bold font-heading" href="#">
-          <Image src="/logotext.png" alt="Vercel Logo" width={500} height={50} />
-          </a>
+      <div className="w-full flex items-center justify-between border-b shadow-sm py-4 px-10 mb-6">
+        <div className="flex space-x-2">
+          <Image src="/iconsemfundo.png" alt="Vercel Logo" width={30} height={50} />
+          <Image src="/logotext.png" alt="Vercel Logo" width={150} height={50} />
         </div>
         <div>
           <Sign />
