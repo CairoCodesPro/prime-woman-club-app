@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-
-import SwiperSlider from '@/components/Swiper';
+import Hero from '@/components/Hero';
+import Cards from '@/components/Cards';
+import SwiperSlider from '@/components/Swiper-Marcas';
 import Products from '@/components/Products';
 import { stripe } from '../services/stripe'
 
@@ -19,7 +20,9 @@ export default function Home({ product }: HomeProps) {
       <Head>
         <title>Início</title>
       </Head>
+      <Hero />
       <SwiperSlider />
+      <Cards />
       <Products />
       <h1>{product.amount}</h1>
     </>

@@ -47,8 +47,8 @@ const Products = () => {
   };
 
   return (
-    <div className="pt-32 bg-white">
-      <h1 className="text-center text-2xl font-bold text-gray-800">All Products</h1>
+    <div className="py-5 bg-white">
+      <h1 className="text-center text-2xl font-bold text-gray-800">Categorias</h1>
       <div className="flex flex-wrap items-center overflow-x-auto overflow-y-hidden py-10 justify-center bg-white text-gray-800">
         <button
           onClick={() => handleSegmentFilter('all')}
@@ -56,7 +56,7 @@ const Products = () => {
             selectedSegment === 'all' ? 'bg-blue-200' : ''
           }`}
         >
-          <span>All</span>
+          <span>Todos</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('architecto')}
@@ -64,7 +64,7 @@ const Products = () => {
             selectedSegment === 'architecto' ? 'bg-blue-200' : ''
           }`}
         >
-          <span>Architecto</span>
+          <span>Salão de Beleza</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('corrupti')}
@@ -72,7 +72,7 @@ const Products = () => {
             selectedSegment === 'corrupti' ? 'bg-blue-200' : ''
           }`}
         >
-          <span>Corrupti</span>
+          <span>Cabelos</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('excepturi')}
@@ -80,10 +80,10 @@ const Products = () => {
             selectedSegment === 'excepturi' ? 'bg-blue-200' : ''
           }`}
         >
-          <span>Excepturi</span>
+          <span>Unhas</span>
         </button>
       </div>
-      <section className="py-10 bg-gray-100">
+      <section className="py-5 px-6 bg-gray-100">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {productsData
             .filter((product) =>
