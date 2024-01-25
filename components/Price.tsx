@@ -23,15 +23,12 @@ const Price = () => {
               <div>
                 <div className="relative flex justify-around">
                   <div className="flex items-end">
-                    <span className="text-8xl text-gray-800 font-bold leading-0">
+                    <span className="text-8xl text-yellow-600 font-bold leading-0">
                       49,90
                     </span>
                     <div className="pb-2">
-                      <span className="block text-2xl text-gray-700 font-bold">
-                        $
-                      </span>
-                      <span className="block text-xl text-yellow-600 font-bold">
-                        Off
+                      <span className="block text-xl text-gray-800 font-bold">
+                        R$
                       </span>
                     </div>
                   </div>
@@ -43,15 +40,15 @@ const Price = () => {
               >
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Primeira vantagem premium</span>
+                  <span>Desconto em nossos salões</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Segunda vantagem semanal</span>
+                  <span>Nails Designer</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Terceira vantagem doar para projeto</span>
+                  <span>Sobrancelhas</span>
                 </li>
               </ul>
               <p className="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
@@ -75,7 +72,7 @@ const Price = () => {
               <button
                 type="submit"
                 title="Submit"
-                className="block w-full py-3 px-6 text-center rounded-xl transition bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800 focus:bg-indigo-600"
+                className="block w-full py-3 px-6 text-center rounded-xl transition bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800"
               >
                 <span className="text-white font-semibold">
                   Envie um email
@@ -93,48 +90,48 @@ const Price = () => {
               <ul role="list" className="space-y-4 py-6 text-gray-600">
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Primeira vantagem premium</span>
+                  <span>Produtos premium</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Segunda vantagem semanal</span>
+                  <span>Serviços de primeira qualidade</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Terceira vantagem doar para projeto</span>
+                  <span>Tutoriais com os melhores no mercado</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Quarto, acesso a todos os componentes semanalmente</span>
+                  <span>Salão de Beleza e muito mais...</span>
                 </li>
               </ul>
-              <p className="text-gray-700">
-              A equipe pode ter qualquer tamanho e você pode adicionar ou trocar membros conforme necessário. As empresas que usam nossa plataforma incluem:
+              <p className="text-gray-700 pb-3">
+              Obtenha os melhores descontos em qualquer produto estético com nosso app. As empresas que usam nossa plataforma incluem:
               </p>
               <div className="mt-6 flex justify-between gap-6">
                 <img
                   className="w-16 lg:w-24"
-                  src="https://tailus.io/sources/blocks/organization/preview/images/clients/airbnb.svg"
+                  src="/clear.png"
                   loading="lazy"
-                  alt="airbnb"
+                  alt="clear"
                 />
                 <img
                   className="w-8 lg:w-16"
-                  src="https://tailus.io/sources/blocks/organization/preview/images/clients/bissell.svg"
+                  src="/ultrex.jpg"
                   loading="lazy"
-                  alt="bissell"
+                  alt="ultrex"
                 />
                 <img
-                  className="w-6 lg:w-12"
-                  src="https://tailus.io/sources/blocks/organization/preview/images/clients/ge.svg"
+                  className="w-16 lg:w-24"
+                  src="clear.png"
                   loading="lazy"
-                  alt="ge"
+                  alt="clear"
                 />
                 <img
-                  className="w-20 lg:w-28"
-                  src="https://tailus.io/sources/blocks/organization/preview/images/clients/microsoft.svg"
+                  className="w-8 lg:w-16"
+                  src="/ultrex.jpg"
                   loading="lazy"
-                  alt="microsoft"
+                  alt="ultrex"
                 />
               </div>
             </div>

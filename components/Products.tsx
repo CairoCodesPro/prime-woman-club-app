@@ -16,19 +16,19 @@ const productsData = [
     name: 'Luzes Ou Mechas Ou Californiana + Corte + Hidratação e Corte Simples',
     segment: 'corrupti',
     price: 450,
-    location: 'Lisbon, Portugal',
+    location: 'Teresina, Piauí',
     image:
       '/luzes.jpg',
     discount: '25%'
   },
   {
     id: 3,
-    name: 'Progressiva + Corte e Hidratação',
+    name: 'Alongamento de Unhas + Manuntenção',
     segment: 'excepturi',
     price: 450,
-    location: 'Lisbon, Portugal',
+    location: 'Teresina, Piauí',
     image:
-      '/progressiva.jpg',
+      '/alongamento.jpg',
     discount: '45%'
   },
   {
@@ -36,10 +36,50 @@ const productsData = [
     name: '1 Sessão Limpeza De Pele + Extração + Esfoliação + Máscara Facial',
     segment: 'consectetur',
     price: 450,
-    location: 'Lisbon, Portugal',
+    location: 'Teresina, Piauí',
     image:
       '/limpeza.jpg',
     discount: '33%'
+  },
+  {
+    id: 5,
+    name: 'Lash Lifting (Permanente De Cílios)',
+    segment: 'architecto',
+    price: 850,
+    location: 'Homero, Teresina',
+    image:
+      '/cilios.jpg',
+    discount: '50%'
+  },
+  {
+    id: 6,
+    name: '1 Sessão Limpeza De Pele + Extração + Esfoliação + Máscara Facial',
+    segment: 'consectetur',
+    price: 450,
+    location: 'Teresina, Piauí',
+    image:
+      '/limpeza-de-pele.jpg',
+    discount: '33%'
+  },
+  {
+    id: 7,
+    name: 'Luzes Ou Mechas Ou Californiana + Corte + Hidratação e Corte Simples',
+    segment: 'corrupti',
+    price: 450,
+    location: 'Teresina, Piauí',
+    image:
+      '/luzes.jpg',
+    discount: '25%'
+  },
+  {
+    id: 8,
+    name: 'Alongamento de Unhas + Manuntenção',
+    segment: 'excepturi',
+    price: 450,
+    location: 'Teresina, Piauí',
+    image:
+      '/alongamento.jpg',
+    discount: '45%'
   },
 ];
 
@@ -55,28 +95,28 @@ const Products = () => {
       <div className="flex flex-wrap items-center overflow-x-auto overflow-y-hidden py-10 justify-center bg-white text-gray-800">
         <button
           onClick={() => handleSegmentFilter('all')}
-          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-600 ${selectedSegment === 'all' ? 'bg-blue-200' : ''
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-900 ${selectedSegment === 'all' ? 'rounded-xl transition bg-yellow-600 text-white active:bg-yellow-800' : ''
             }`}
         >
           <span>Todos</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('architecto')}
-          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-600 ${selectedSegment === 'architecto' ? 'bg-blue-200' : ''
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-900 ${selectedSegment === 'architecto' ? 'rounded-xl transition bg-yellow-600 text-white active:bg-yellow-800' : ''
             }`}
         >
           <span>Salão de Beleza</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('corrupti')}
-          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-600 ${selectedSegment === 'corrupti' ? 'bg-blue-200' : ''
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-900 ${selectedSegment === 'corrupti' ? 'rounded-xl transition bg-yellow-600 text-white active:bg-yellow-800' : ''
             }`}
         >
           <span>Cabelos</span>
         </button>
         <button
           onClick={() => handleSegmentFilter('excepturi')}
-          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-600 ${selectedSegment === 'excepturi' ? 'bg-blue-200' : ''
+          className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 text-gray-900 ${selectedSegment === 'excepturi' ? 'rounded-xl transition bg-yellow-600 text-white active:bg-yellow-800' : ''
             }`}
         >
           <span>Unhas</span>
@@ -95,7 +135,7 @@ const Products = () => {
               >
                 <a href="#">
                   <div className="relative flex items-end overflow-hidden rounded-xl">
-                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-3.5 py-1.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3 absolute bottom-1">{product.discount}</span>
+                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-3.5 py-1.5 rounded dark:rounded-xl transition bg-yellow-600 active:bg-yellow-800 dark:text-blue-800 ml-3 absolute bottom-1">{product.discount}</span>
                     <img src={product.image} alt={product.name} />
                   </div>
 

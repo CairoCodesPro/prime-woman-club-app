@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import Hero from '@/components/Hero';
 import Cards from '@/components/Cards';
-import SwiperSlider from '@/components/Swiper-Marcas';
+import SwiperMarcas from '@/components/Swiper-Marcas';
 import Price from '@/components/Price';
 import Footer from '@/components/Footer';
 import { stripe } from '../services/stripe'
@@ -22,7 +22,7 @@ export default function Home({ product }: HomeProps) {
         <title>Início</title>
       </Head>
       <Hero />
-      <SwiperSlider />
+      <SwiperMarcas />
       <Cards />
       <Price />
       <Footer />

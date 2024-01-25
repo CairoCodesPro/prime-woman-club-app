@@ -2,14 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <html>
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/motion-tailwind.css"
-        />
-      </head>
-      <body className="bg-white">
+      <div className="bg-white">
         <div className="flex flex-col mx-3 bg-white rounded-lg">
           <div className="w-full draggable">
             <div className="container flex flex-col mx-auto">
@@ -193,8 +186,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </body>
-    </html>
+      </div>
   );
 };
 
