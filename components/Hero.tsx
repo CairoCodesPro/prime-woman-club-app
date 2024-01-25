@@ -25,7 +25,7 @@ export default function SubButton({ priceId }: SubButtonProps) {
 
       await stripe.redirectToCheckout({ sessionId });
     } catch (err) {
-      alert(err.message);
+      console.log(err);
     }
   }
 
