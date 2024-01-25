@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Sign from '@/components/Sign';
+import ClubDescontos from '@/components/ClubDescontos';
 export default function NavBar() {
   return (
     <>
@@ -8,7 +9,8 @@ export default function NavBar() {
           <Image src="/iconsemfundo.png" alt="Vercel Logo" width={30} height={50} />
           <Image src="/logotext.png" alt="Vercel Logo" width={150} height={50} />
         </div>
-        <div>
+        <div className="flex gap-5">
+        <ClubDescontos />
           <Sign />
         </div>
       </div>

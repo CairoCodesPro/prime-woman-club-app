@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const Cards = () => {
   return (
@@ -23,8 +24,8 @@ const Cards = () => {
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">
                     <h1 className="font-semibold p-2">Primeiro Passo:</h1>
-                    <p>
-                      Se cadastre com uma conta google segura ou seu email pessoal.
+                    <p className="flex">
+                      Se cadastre com uma conta google segura ou seu email pessoal.<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
                     </p>
                   </div>
                 </div>
@@ -34,8 +35,8 @@ const Cards = () => {
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">
                   <h1 className="font-semibold p-2">Segundo Passo:</h1>
-                    <p>
-                      Após seu cadastro, faça seu login logo acima no botão "FAÇA LOGIN".
+                    <p className="flex">
+                      Após seu cadastro, faça seu login logo acima no botão "FAÇA LOGIN".<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
                     </p>
                   </div>
                 </div>

@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Cards from '@/components/Cards';
 import SwiperSlider from '@/components/Swiper-Marcas';
 import Price from '@/components/Price';
+import Footer from '@/components/Footer';
 import { stripe } from '../services/stripe'
 
 interface HomeProps {
@@ -24,7 +25,7 @@ export default function Home({ product }: HomeProps) {
       <SwiperSlider />
       <Cards />
       <Price />
-      {/* <h1>{product.amount}</h1> */}
+      <Footer />
     </>
   )
 }

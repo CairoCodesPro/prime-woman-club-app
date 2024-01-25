@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCheck } from "react-icons/bs";
 
 const Price = () => {
   return (
@@ -17,17 +18,17 @@ const Price = () => {
             ></div>
             <div className="relative p-6 space-y-6 lg:p-8">
               <h3 className="text-3xl text-gray-700 font-semibold text-center">
-                Organização
+                Assine por:
               </h3>
               <div>
                 <div className="relative flex justify-around">
                   <div className="flex items-end">
                     <span className="text-8xl text-gray-800 font-bold leading-0">
-                      35
+                      49,90
                     </span>
                     <div className="pb-2">
                       <span className="block text-2xl text-gray-700 font-bold">
-                        %
+                        $
                       </span>
                       <span className="block text-xl text-yellow-600 font-bold">
                         Off
@@ -40,16 +41,16 @@ const Price = () => {
                 role="list"
                 className="w-max space-y-4 py-6 m-auto text-gray-600"
               >
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&check;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Primeira vantagem premium</span>
                 </li>
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&check;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Segunda vantagem semanal</span>
                 </li>
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&check;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Terceira vantagem doar para projeto</span>
                 </li>
               </ul>
@@ -57,7 +58,7 @@ const Price = () => {
                 <span>Contato pelo</span>
                 <a
                   href="tel:+24300"
-                  className="flex space-x-2 items-center text-purple-600"
+                  className="flex space-x-2 items-center text-yellow-600"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@ const Price = () => {
               <button
                 type="submit"
                 title="Submit"
-                className="block w-full py-3 px-6 text-center rounded-xl transition bg-purple-600 hover:bg-purple-700 active:bg-purple-800 focus:bg-indigo-600"
+                className="block w-full py-3 px-6 text-center rounded-xl transition bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800 focus:bg-indigo-600"
               >
                 <span className="text-white font-semibold">
                   Envie um email
@@ -90,20 +91,20 @@ const Price = () => {
             ></div>
             <div className="relative p-6 pt-16 md:p-8 md:pl-12 md:rounded-r-2xl lg:pl-20 lg:p-16">
               <ul role="list" className="space-y-4 py-6 text-gray-600">
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&verificar;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Primeira vantagem premium</span>
                 </li>
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&verificar;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Segunda vantagem semanal</span>
                 </li>
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&verificar;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Terceira vantagem doar para projeto</span>
                 </li>
-                <li className="space-x-2">
-                  <span className="text-yellow-600 font-semibold">&verificar;</span>
+                <li className="space-x-2 flex">
+                  <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
                   <span>Quarto, acesso a todos os componentes semanalmente</span>
                 </li>
               </ul>

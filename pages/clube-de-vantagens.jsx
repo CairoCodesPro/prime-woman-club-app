@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Swiper from '@/components/Swiper';
 import Products from '@/components/Products';
+import Price from '@/components/Price';
+import Footer from '@/components/Footer';
 
 export default function Clube() {
 
@@ -11,6 +13,8 @@ export default function Clube() {
       </Head>
       <Swiper />
       <Products />
+      <Price />
+      <Footer />
     </>
   )
 }
