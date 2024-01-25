@@ -7,3 +7,15 @@
 @media (max-width: 1080px) {}
 
 @media (max-width:720px) {}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem cobrirá completamente a área da div */
+}
+
+.slide-item {
+    width: 100%; /* Certifica-se de que cada item do Slider ocupe toda a largura disponível */
+    height: 300px; /* Ajuste a altura conforme necessário */
+  }
