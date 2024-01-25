@@ -178,7 +178,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex justify-center items-center">
                 <p className="text-sm font-normal leading-7 text-center text-gray-700">
                   Todos os direitos reservados <br></br> @Prime Woman
                 </p>
