@@ -25,12 +25,12 @@ export default function SubButton({ priceId }: SubButtonProps) {
 
       await stripe.redirectToCheckout({ sessionId });
     } catch (err) {
-      alert(err.message);
+      console.log(err);
     }
   }
 
   return (
-    <div className="relative h-screen hero-bg" style={{ backgroundImage: "url('/bannernovo.png')" }}>
+    <div className="relative h-screen hero-bg" style={{ backgroundImage: "url('/banne1.png')" }}>
       <div className="absolute grid grid-cols-1 lg:grid-cols-2 gap-5 h-full">
         <div className="order-last flex justify-center lg:justify-end items-center px-2">
           <div className="hidden lg:block w-full pt-9">
