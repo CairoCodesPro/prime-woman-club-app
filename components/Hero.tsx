@@ -33,16 +33,11 @@ export default function SubButton({ priceId }: SubButtonProps) {
     <div className="relative h-screen" style={{ height: "75vh" }}>
       <div
         className="absolute inset-0 bg-cover bg-center rounded-md"
-        style={{ backgroundImage: "url('/teste.jpg')" }}
+        style={{ backgroundImage: "url('/banne1.png')" }}
       ></div>
       <div className="absolute grid grid-cols-1 lg:grid-cols-2 gap-5 h-full">
         <div className="order-last flex justify-center lg:justify-end items-center px-2">
           <div className="hidden lg:block w-full pt-9">
-            <img
-              src="/banner-home.png"
-              alt=""
-              className="w-11/12 h-full object-cover rounded-md"
-            />
           </div>
         </div>
         <div className="h-full flex flex-col justify-center items-center lg:items-start p-10 text-center lg:text-left">

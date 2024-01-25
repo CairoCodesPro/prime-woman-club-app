@@ -7,8 +7,8 @@ export default class HomeBanners extends Component {
   render() {
     const settings = {
       centerMode: true,
-      centerPadding: "250px",
-      slidesToShow: 1,
+      centerPadding: "200px",
+      slidesToShow: 3,
       speed: 500,
       arrows: false,
       dots: false,
@@ -25,31 +25,28 @@ export default class HomeBanners extends Component {
     };
     return (
       <>
-        <div className="py-5 px-4 grid grid-cols-2">
-          <div className="text-center text-2xl py-16">
-            <p>
-              As grandes multinacionais escolhem nosso app
-              <span className="flex justify-center py-2">
-                <img src="/logotext.png" alt="" className="w-44" />
-              </span>
+        <div className="py-5 px-4 grid grid-cols-3">
+          <div className="py-5 px-20">
+            <p className="text-xl pt-5 font-thin">
+              O melhor clube de vantagens para mulheres em Teresina, contamos com os melhores parceiros
             </p>
           </div>
-          <div>
+          <div className="col-span-2">
             <Slider {...settings}>
-              <div>
-                <img src="/aveeno.png" alt="" className="" />
+              <div className="pt-10">
+                <img src="/espacodassobrancelhas.png" alt="" className="" />
               </div>
-              <div className="py-8 px-10">
-                <img src="/ducray.png" alt="" className="" />
+              <div className="pt-10">
+                <img src="/espacodassobrancelhas.png" alt="" className="" />
               </div>
-              <div className="py-12 px-10">
-                <img src="/nuxe.png" alt="" className="" />
+              <div className="pt-10">
+                <img src="/espacodassobrancelhas.png" alt="" className="" />
               </div>
-              <div>
-                <img src="/phyto.png" alt="" className="" />
+              <div className="pt-10">
+                <img src="/espacodassobrancelhas.png" alt="" className="" />
               </div>
-              <div>
-                <img src="/shiseido.png" alt="" className="" />
+              <div className="pt-10">
+                <img src="/espacodassobrancelhas.png" alt="" className="" />
               </div>
             </Slider>
           </div>

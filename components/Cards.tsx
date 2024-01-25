@@ -18,7 +18,7 @@ const Cards = () => {
           </div>
 
           <div className="">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               <div className="">
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">

@@ -23,8 +23,8 @@ export default function Home({ product }: HomeProps) {
       <Hero />
       <SwiperSlider />
       <Cards />
-      <Products />
-      <h1>{product.amount}</h1>
+      {/* <Products /> */}
+      {/* <h1>{product.amount}</h1> */}
     </>
   )
 }
