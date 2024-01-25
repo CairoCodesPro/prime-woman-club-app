@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next';
 import Hero from '@/components/Hero';
 import Cards from '@/components/Cards';
 import SwiperSlider from '@/components/Swiper-Marcas';
-import Products from '@/components/Products';
+import Price from '@/components/Price';
 import { stripe } from '../services/stripe'
 
 interface HomeProps {
@@ -23,7 +23,7 @@ export default function Home({ product }: HomeProps) {
       <Hero />
       <SwiperSlider />
       <Cards />
-      {/* <Products /> */}
+      <Price />
       {/* <h1>{product.amount}</h1> */}
     </>
   )

@@ -9,7 +9,7 @@ const Cards = () => {
             <div>
               <h2 className="text-3xl font-light text-black p-2">
                 <span className="block w-full font-light text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-600 lg:inline">
-                  Prime Woman
+                  Prime Woman Club
                 </span>{" "}
                 é um app que reúne todas as ações de bem-estar da organização
               </h2>
@@ -35,7 +35,7 @@ const Cards = () => {
                   <div className="text-gray-900">
                   <h1 className="font-semibold p-2">Segundo Passo:</h1>
                     <p>
-                      Após seu cadastro, faça seu login logo acima.
+                      Após seu cadastro, faça seu login logo acima no botão "FAÇA LOGIN".
                     </p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const Cards = () => {
                   <div className="text-gray-900">
                   <h1 className="font-semibold p-2">Terceiro Passo:</h1>
                     <p>
-                      Entre na plataforma e desfruto de nosso clube de desconto.
+                      Entre na plataforma e desfrute de nosso clube de desconto.
                     </p>
                   </div>
                 </div>
