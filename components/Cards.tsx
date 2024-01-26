@@ -3,7 +3,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 const Cards = () => {
   return (
-    <section className="py-10 bg-white z-40 relative px-16">
+    <section className="py-10 bg-gray-100 z-40 relative px-16">
       <div className="container mx-auto">
         <div className="flex flex-row">
           <div className="flex justify-center items-center p-2">
@@ -23,9 +23,9 @@ const Cards = () => {
               <div className="">
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">
-                    <h1 className="font-semibold p-2">Primeiro Passo:</h1>
+                    <h1 className="font-semibold">Primeiro Passo:</h1>
                     <p className="flex">
-                      Se cadastre com uma conta google, de preferência, pessoal e seguro.<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
+                      Se cadastre com uma conta google, rápido e seguro.<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
                     </p>
                   </div>
                 </div>
@@ -34,9 +34,9 @@ const Cards = () => {
               <div className="">
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">
-                  <h1 className="font-semibold p-2">Segundo Passo:</h1>
+                  <h1 className="font-semibold">Segundo Passo:</h1>
                     <p className="flex">
-                      Após isso, clique em qualquer botão "Assine Agora" e faça o pagamento.<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
+                      Clique em qualquer botão "Assine Agora" e faça o pagamento.<span className="flex justify-center items-center"><BsArrowRightCircle  size={20}/></span>
                     </p>
                   </div>
                 </div>
@@ -45,9 +45,9 @@ const Cards = () => {
               <div className="">
                 <div className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                   <div className="text-gray-900">
-                  <h1 className="font-semibold p-2">Terceiro Passo:</h1>
+                  <h1 className="font-semibold">Terceiro Passo:</h1>
                     <p>
-                      Pronto! Agora você pode aproveitar nosso Clube de Descontos e desfrutar as vantagens.
+                      Aproveite nosso Clube de Descontos e desfrutar das vantagens.
                     </p>
                   </div>
                 </div>

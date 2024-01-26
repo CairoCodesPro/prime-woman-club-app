@@ -7,7 +7,7 @@ const Price = () => {
       <div className="container m-auto px-6 py-20 md:px-12 lg:px-20">
         <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
           <h2 className="text-2xl text-black font-light md:text-4xl">
-          Uma assinatura da <span className="text-yellow-600">Prime Womam Club</span> dá acesso aos nossos componentes e mais.
+          Uma assinatura da <span className="text-yellow-600">Prime Womam Club</span> dá acesso completo ao nosso clube de vantagens
           </h2>
         </div>
         <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
@@ -17,8 +17,8 @@ const Price = () => {
               className="absolute top-0 w-full h-full rounded-2xl bg-white shadow-xl transition duration-500 group-hover:scale-105 lg:group-hover:scale-110"
             ></div>
             <div className="relative p-6 space-y-6 lg:p-8">
-              <h3 className="text-3xl text-gray-700 font-semibold text-center">
-                Assine por:
+              <h3 className="text-2xl text-gray-700 font-semibold text-center">
+                Assine agora por apenas
               </h3>
               <div>
                 <div className="relative flex justify-around">
@@ -36,11 +36,11 @@ const Price = () => {
               </div>
               <ul
                 role="list"
-                className="w-max space-y-4 py-6 m-auto text-gray-600"
+                className="w-max space-y-2 py-2 m-auto text-gray-600"
               >
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Desconto em nossos salões</span>
+                  <span>Descontos em toda rede</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
@@ -51,8 +51,18 @@ const Price = () => {
                   <span>Sobrancelhas</span>
                 </li>
               </ul>
-              <p className="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
-                <span>Contato pelo</span>
+              
+              <button
+                type="submit"
+                title="Submit"
+                className="block w-full py-3 px-6 text-center rounded-xl transition bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800"
+              >
+                <span className="text-white font-semibold">
+                  Assine Agora
+                </span>
+              </button>
+<p className="flex items-center justify-center space-x-4 text-lg text-gray-600 text-center">
+                <span>Dúvidas atraves</span>
                 <a
                   href="tel:+24300"
                   className="flex space-x-2 items-center text-yellow-600"
@@ -67,17 +77,7 @@ const Price = () => {
                   </svg>
                   <span className="font-semibold">WhatsApp</span>
                 </a>
-                <span>ou</span>
               </p>
-              <button
-                type="submit"
-                title="Submit"
-                className="block w-full py-3 px-6 text-center rounded-xl transition bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800"
-              >
-                <span className="text-white font-semibold">
-                  Envie um email
-                </span>
-              </button>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ const Price = () => {
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
-                  <span>Tutoriais com os melhores no mercado</span>
+                  <span>Fitness</span>
                 </li>
                 <li className="space-x-2 flex">
                   <span className="text-yellow-600 font-semibold justify-center"><BsCheck  size={20}/></span>
@@ -106,7 +106,7 @@ const Price = () => {
                 </li>
               </ul>
               <p className="text-gray-700 pb-3">
-              Obtenha os melhores descontos em qualquer produto estético com nosso app. As empresas que usam nossa plataforma incluem:
+              Obtenha os melhores descontos em qualquer serviço de nosso app. As empresas que usam nossa
               </p>
               <div className="mt-6 flex justify-between gap-6">
                 <img
